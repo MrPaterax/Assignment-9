@@ -1,0 +1,61 @@
+body{
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+}
+.buttonHolder{
+  width: 100%;
+  text-align: center;
+  margin-top: 40vmin;
+}
+.button{
+  background-color: #cc5b8c85;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.button:hover {
+  background-color: #cc5b8c; /* Green */
+  color: black;
+}
+
+.ModalWindow{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background-color: hsl(0 0% 100% / 0.6);
+  opacity: 0;
+  pointer-events: none;
+}
+.msgtext{
+  position: relative;
+  width: 50vw;
+  height: 25vmin;
+  border-radius: 3px;
+  border: 2px solid red;
+  margin: auto;
+  margin-top: 12%;
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+}
+.visible{
+  opacity: 1;
+  pointer-events: auto;
+}
+#closebutton{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
